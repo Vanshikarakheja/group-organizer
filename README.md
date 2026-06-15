@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Group Organizer
 
-First, run the development server:
+A modern sports and event group management platform built with Next.js, Supabase, and Tailwind CSS.
+
+## Live Demo
+
+https://group-organizer.vercel.app/
+
+---
+
+## Features
+
+### Authentication
+
+* Google Sign-In using Supabase Authentication
+* Automatic profile creation
+* Secure user sessions
+
+### Group Management
+
+* Create and manage groups
+* View group details
+* Configure group settings
+* Generate invite links
+
+### Membership Management
+
+* Join groups using invite links
+* Member approval workflow
+* View group members
+* Promote and manage members
+
+### Game Management
+
+* Create games/events
+* View upcoming games
+* Manage game information
+
+### RSVP System
+
+* Confirm attendance for games
+* Track participant responses
+
+### Attendance Tracking
+
+* Mark attendance for events
+* Maintain participation records
+
+### Payment Tracking
+
+* Record participant payments
+* Track payment status
+* Store transaction references
+
+### Announcements
+
+* Post announcements for group members
+* View announcement history
+* Group-wide communication
+
+### Dashboard
+
+* View all joined groups
+* Quick access to group management
+* Modern responsive interface
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Supabase
+* PostgreSQL
+
+### Authentication
+
+* Supabase Auth
+* Google OAuth
+
+### Deployment
+
+* Vercel
+
+---
+
+## Database Structure
+
+### Profiles
+
+Stores user profile information.
+
+### Groups
+
+Stores group information and settings.
+
+### Memberships
+
+Manages group membership and roles.
+
+### Games
+
+Stores game and event details.
+
+### RSVPs
+
+Tracks player responses for games.
+
+### Payments
+
+Tracks payment records and status.
+
+### Announcements
+
+Stores group announcements.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Vanshikarakheja/group-organizer.git
+```
+
+Navigate to project folder:
+
+```bash
+cd group-organizer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create environment variables:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Project Workflow
 
-To learn more about Next.js, take a look at the following resources:
+1. User logs in using Google.
+2. User creates a group.
+3. Invite link is generated.
+4. Members request to join.
+5. Organizer approves requests.
+6. Games are created.
+7. Members RSVP for games.
+8. Attendance is tracked.
+9. Payments are recorded.
+10. Announcements are shared with members.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+**Vanshika Rakheja**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Built as a full-stack sports and group management platform using Next.js and Supabase.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
